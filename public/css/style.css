@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+
+*{
+    outline: 0px solid red;
+  }
+  body{
+    background-image: linear-gradient(135deg, #8BC6EC 50%, #9599E2 50%);
+    overflow-y: hidden;
+    font-family: 'Lato', sans-serif;
+  }
+  .container{
+    background-color: rgb(255, 255, 255);
+    margin: 40px auto;
+    padding: 0%;
+  }
+  .header{
+    font-size:1.25rem;
+    padding: 15px 0;
+    text-align: center;
+  }
+  form{
+    padding: 10px 10px;
+    background-color: #0f213a;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  #messages{
+    height: 500px;
+    overflow-y: scroll;
+    /* background-color: rgb(231, 231, 231); */
+    background-color: #183153;
+  }
+  #messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0 20px; 
+    font-size: 1.35rem;
+  }
+  #messages > li { 
+    padding: 0.5rem 1rem; 
+    /* max-width: 50%; */
+    clear: both;
+    display: table;
+    margin: 10px 0;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    text-align: left;
+  }
+  #messages > li:nth-child(odd) { 
+    background: #efefef; 
+    float: right;
+    text-align: right;
+  }
+
+  input[type=text], select {
+    width: 92%;
+    /* height: 50px; */
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0px 0;
+    display: inline-block;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    /* border: 1px solid #ccc; */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-sizing: border-box;
+  }
+  button{ 
+    padding-right: 10px;
+    padding-left: 10px;
+    border: none;
+    /* display: flex; */
+    background-color: transparent;
+  }
+  @media screen and (min-width: 768px) {
+    .container{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container{
+      width: 90%;
+      height: auto;
+    }
+  }
+  .header{
+    width: 100%;
+    background-color: #fff;
+  }
