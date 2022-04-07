@@ -2,21 +2,19 @@
 
 
 *{
-    outline: 0px solid red;
+    outline: 1px solid red;
   }
   body{
-    /* background-color: linear-gradient(135deg, #8BC6EC 50%, #9599E2 50%); */
-    background-color: #0f213a;
-    /* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
-    background-repeat: no-repeat;
+    background-image: linear-gradient(135deg, #8BC6EC 50%, #9599E2 50%);
+    /* overflow-y: hidden; */
+    margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
-    height:;
   }
   .container{
     background-color: rgb(255, 255, 255);
     margin: 40px auto;
     padding: 0%;
-    height: 500px;
   }
   .header{
     font-size:1.25rem;
@@ -33,7 +31,7 @@
     box-sizing: border-box;
   }
   #messages{
-    height: 500px;
+    height: 400px;
     overflow-y: scroll;
     /* background-color: rgb(231, 231, 231); */
     background-color: #183153;
@@ -84,15 +82,21 @@
   @media screen and (min-width: 768px) {
     .container{
       width: 50%;
+
     }
+    
   }
   @media screen and (max-width: 768px) {
     .container{
-      width: 90%;
+      width: 95%;
       /* height: auto; */
+    }
+    #messages{
+      height: 1540px;
     }
   }
   .header{
-    width: 100%;
+    /* width: 100%; **/
+    /* height: 80px; */
     background-color: #fff;
   }

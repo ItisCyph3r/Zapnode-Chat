@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <htmlang>
   <head>
-    <title> Zapnode-Chat </title>
+    <title> Zapnode-Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        Zapnode<sub>Chat</sub>
-      </div>
+        <div style="font-size: 2rem; text-align: center; padding-top: 20px;">Zapnode<sub>Chat</sub></p> 
       <ul id="messages">
         
       </ul>
@@ -44,7 +44,7 @@
           input.value = '';
         }
       });
-
+      
       socket.on('chat message', function(msg) {
         console.log(userName)
         var item = document.createElement('li');
