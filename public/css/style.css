@@ -2,7 +2,7 @@
 
 
 *{
-    outline: 1px solid red;
+    outline: 0px solid red;
   }
   body{
     background-image: linear-gradient(135deg, #8BC6EC 50%, #9599E2 50%);
