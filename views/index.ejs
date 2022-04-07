@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-        <div style="font-size: 2rem; text-align: center; padding-top: 20px;">Zapnode<sub>Chat</sub></p> 
+        <div style="font-size: 1.5rem; text-align: center; padding-top: 20px;">Zapnode<sub>Chat</sub></p> 
       <ul id="messages">
         
       </ul>
@@ -44,7 +44,7 @@
           input.value = '';
         }
       });
-      
+
       socket.on('chat message', function(msg) {
         console.log(userName)
         var item = document.createElement('li');
