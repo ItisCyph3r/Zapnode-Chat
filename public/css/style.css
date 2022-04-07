@@ -5,14 +5,18 @@
     outline: 0px solid red;
   }
   body{
-    background-image: linear-gradient(135deg, #8BC6EC 50%, #9599E2 50%);
-    overflow-y: hidden;
+    /* background-color: linear-gradient(135deg, #8BC6EC 50%, #9599E2 50%); */
+
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
     font-family: 'Lato', sans-serif;
+    height:;
   }
   .container{
     background-color: rgb(255, 255, 255);
     margin: 40px auto;
     padding: 0%;
+    height: 500px;
   }
   .header{
     font-size:1.25rem;
